@@ -37,6 +37,9 @@
  }
  
  .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
      height:auto;
      width:350px;
      height: 650px;
@@ -139,9 +142,8 @@ background-color: #0051B2;
  
  h4 {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 22px;
   font-family: bb;
-  margin-bottom: 10px;
  }
  
  .parent{
