@@ -33,18 +33,21 @@
      display:flex;
      justify-content:center;
      align-items:center;
-     background-image: url(BG.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
+     background-color: #9868ba;
  }
  
  .card{
      height:auto;
-     width:300px;
-     background-color:#fff;
-     border-radius:10px;
+     width:350px;
+     height: 650px;
+     border-radius:25px;
      padding:10px 20px;
      margin: 20px;
+     background-image: url(bg.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
 
 h5 {
@@ -56,10 +59,10 @@ color: #009345;
 
 input[type="text"] ,[type="number"] ,[type="date"] ,[type="email"] {
 width:100%;
-height:40px;
+height:35px;
 border:none;
 border:2px solid rgb(245, 245, 245);
-box-shadow:0px 5px 20px 2px rgba(0,0,0,0.1);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 outline:none;
 padding:0 10px;
 box-sizing:border-box;
@@ -67,7 +70,7 @@ font-size:13px;
 border-radius:5px;
 margin-top: 16px;
 text-align: right;
-color: #98c93c;
+color: #9868ba;
 font-family: bb;
 }
 
@@ -98,7 +101,7 @@ right:0;
 top:-13px;
 font-size:13px;
 font-family: b;
-color:#009345;
+color:#ffffff;
 }
 
 .input-text label {
@@ -135,15 +138,16 @@ background-color: #0051B2;
  }
  
  h4 {
-  color: #009345;
-  font-size: 17px;
+  color: #ffffff;
+  font-size: 20px;
   font-family: bb;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  text-align: center;
  }
  
  .parent{
      margin-top:15px;
-     margin-bottom:50px;
+     margin-bottom:15px;
  }
  .card .top-div{
     display:flex;
@@ -153,8 +157,7 @@ background-color: #0051B2;
  } 
  
  .top-div img{
-     width: 250px;
-     margin-right:7px;
+     width: 200px;
  }
 
  .progress-bar{
@@ -213,7 +216,8 @@ background-color: #0051B2;
 }
  
  .content{
-
+  width: 85%;
+  margin: 0 auto;
      text-align:center;
 
  }
@@ -223,13 +227,15 @@ background-color: #0051B2;
      color: #009345;
  }
  .content p{
-     color:#98c93c;
-     font-size:14px;
+     color:#ffffff;
+     font-size:15px;
      font-family: m;
  }
  .input-text{
-     position:relative;
-     margin-top:30px;
+    width: 85%;
+    margin: 0px auto;
+    position:relative;
+    margin-top:30px;
  }
 
  .radio-text{
@@ -280,10 +286,10 @@ background-color: #0051B2;
 
  textarea {
   width:100%;
-  height:317px;
+  height:110px;
   border:none;
   border:2px solid rgb(245, 245, 245);
-  box-shadow:0px 5px 20px 2px rgba(0,0,0,0.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   outline:none;
   padding:10px 10px;
   box-sizing:border-box;
@@ -291,8 +297,9 @@ background-color: #0051B2;
   border-radius:5px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: bb;
   text-align: right;
-  color: #98c93c;
+  color: #9868ba;
  } 
 
 
@@ -310,9 +317,9 @@ background-color: #0051B2;
  }
 
  .button button{
-     height:40px;
-     width:80%;
-     background: linear-gradient(45deg, rgba(0,147,69,1) 0%, rgba(152,201,60,1) 90%);
+     height:35px;
+     width:40%;
+     background: linear-gradient(45deg, #67308E 0%, #9868ba 100%);
      font-size:14px;
      color:#fff;
      border-radius:5px;
@@ -320,7 +327,8 @@ background-color: #0051B2;
      transition:all 0.5s;
      border: none;
      margin: 15px 0px 12px 0px;
-     font-family: b;
+     font-family: bb;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
 
  .button_gap{
@@ -477,17 +485,18 @@ margin-bottom: 10px;
 }
 
 .group {
-  height:40px;
-  width:80%;
-  background: linear-gradient(45deg, rgba(0,147,69,1) 0%, rgba(152,201,60,1) 90%);
-  font-size:14px;
-  color:#fff;
-  border-radius:5px;
-  cursor:pointer;
-  transition:all 0.5s;
-  border: none;
-  margin: 15px 0px 12px 0px;
-  font-family: bb;
+     height:40px;
+     width:50%;
+     background: linear-gradient(45deg, #67308E 0%, #9868ba 100%);
+     font-size:14px;
+     color:#fff;
+     border-radius:5px;
+     cursor:pointer;
+     transition:all 0.5s;
+     border: none;
+     margin: 15px 0px 12px 0px;
+     font-family: bb;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -576,21 +585,25 @@ max-width:650px;
 
 
 
-
+.rating-container {
+  width: 85%;
+  margin: 0px auto;
+}
 
 .rating {
-  background-color: rgba(0, 147, 69, 0.3);
-  padding: 7px 5px 0px 5px;
+  background-color: hwb(0 100% 0% / 0.3);
+  padding: 5px 3px 0px 3px;
   border-radius: 50px;
   box-shadow:0px 5px 20px 2px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
 label svg {
   fill: rgb(242, 242, 242);
-  height: 31px;
-  width: 31px;
+  height: 33px;
+  width: 30px;
   margin: 0px;
-  padding: 0px 11px;
+  padding: 0px 10px;
 }
 
 input[type="radio"] + svg {
