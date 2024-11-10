@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>شجرة عائلة نادي أدِيب</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="parent">
+                <div class="top-div">
+                   <img src="logo.png" alt="">
+                </div>
+            </div> 
+
+            <form method="post" action="https://script.google.com/macros/s/AKfycbzn2zLSaSG3UPSKxLK2SemqVbiaxJ3cpt_5WW49jwUH8u7TkHGFpeqXLUzCEgePdqR0LQ/exec" name="MyGroup">
+
+            <div class="main active">
+                <div class="content">
+                   <h4>     🎤المايك لك    </h4>
+                   <p>
+                    اذا كنت حاب أسمك يًذكر في قراءة السؤال، أكتب أسمك
+                  </p>
+                </div>
+                <div class="input-text">
+                  <input id="input" type="text" placeholder="أسمك يـ أدِيب/ـه "  name="الأسم">
+                  <span> ✍🏻الأسم الثلاثي </span>
+              </div>  
+
+              <div class="input-text">
+            <textarea placeholder="… هذه مساحتك" name="المساحة" id="input" require></textarea>
+                <span> 🎤المايك لك </span>
+            </div>  
+                <div class="button">
+                    <button  type="submit" value="Submit" class="create-workspace"> 📢وصل لنا صوتك </button>
+                </div>
+            </div> 
+
+
+            <div class="main">
+
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+                <div class="content">
+                   <h2 style="color: #ffffff; font-family: b; font-size: 28px;"> ✨صوتك وصل <span style="color: #ffffff; font-family: r; font-size: 18px;"> <br> بإذن الله سيتم الجواب على <br> استفسارك أو سؤالك </span></h2>
+                   <!-- <p> 
+                    الإبداع يأتي من الثقة، ونحن نثق بطاقات مُبدعينا وأُدبائنا في أدِيب
+                  </p> -->
+                </div> 
+
+                <div class="finish">
+              <!-- <button class="twitter">     <a href="https://twitter.com/AB_KFU" target="_blank"> الذهاب إلى تويتر  </a></button> -->
+                <button class="group">  <a href="index.html"> ✍🏻كتابة سؤال جديد </a></button> 
+                  <!-- <a href="https://twitter.com/AB_KFU" target="_blank" class="twitter">الذهاب إلى تويتر</a>
+                  <a href="https://web.telegram.org/a/#-1001825412173" target="_blank" class="group">الرجوع الى القروب</a> -->
+
+              </div>
+
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+  </form> 
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzn2zLSaSG3UPSKxLK2SemqVbiaxJ3cpt_5WW49jwUH8u7TkHGFpeqXLUzCEgePdqR0LQ/exec'
+      const form = document.forms['MyGroup']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        // .then(response => alert("Thank you! your form is submitted successfully." ))
+        // .then(() => {  window.location.reload(); })
+        // .catch(error => console.error('Error!', error.message))
+      })
+      </script>
+
+      </body>
+</html>
